@@ -2,5 +2,5 @@
 
 - Tugas 1 [here](https://github.com/amandaslwa/progjar/tree/main/Tugas%201)
 - Tugas 2 [here](https://github.com/amandaslwa/progjar/tree/main/Tugas%202)
-- Tugas 3
+- Tugas 3 [here](https://github.com/amandaslwa/progjar/tree/main/Tugas%203)
 - Tugas 4 
