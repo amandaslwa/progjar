@@ -9,22 +9,22 @@ class kirim_request(threading.Thread):
 
     def run(self):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        logging.warning("membuka socket")
+        # logging.warning("membuka socket")
 
         server_address = ('localhost', 45000)
-        logging.warning(f"opening socket {server_address}")
+        # logging.warning(f"opening socket {server_address}")
         sock.connect(server_address)
 
         try:
             # Send data
             request = 'TIME \r\n'
-            logging.warning(f"[CLIENT] request {request}")
+            # logging.warning(f"[CLIENT] request {request}")
             sock.sendall(request.encode())
             while True:
                 data = sock.recv(16)
-                logging.warning(f"[WAKTU DARI SERVER] {data}")
+                # logging.warning(f"[WAKTU DARI SERVER] {data}")
         finally:
-            logging.warning("closing")
+            # logging.warning("closing")
             sock.close()
         return
 
